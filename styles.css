@@ -1,14 +1,16 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #f4f4f4; /* Light grey background */
 }
 
 header {
-    background: #333;
+    background: rgb(118, 146, 255); /* Soft Blue */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -25,12 +27,18 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(255, 193, 0); /* Bright Yellow */
 }
 
 main {
@@ -38,25 +46,48 @@ main {
 }
 
 article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
     margin-bottom: 2rem;
 }
 
 article h2 {
-    margin-top: 0;
+    color: rgb(186, 79, 250); /* Purple */
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+article p {
+    margin-bottom: 1rem;
 }
 
 a {
-    color: #333;
+    color: rgb(255, 139, 36); /* Orange */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+footer {
+    background: rgb(100, 200, 100); /* Light Green */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Additional styles for highlighting and layout */
+section {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid rgb(254, 84, 72); /* Red Accent */
+}
+
+h2 {
+    color: rgb(186, 79, 250); /* Purple */
 }
